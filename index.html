@@ -1,116 +1,147 @@
-{\rtf1\ansi\ansicpg936\cocoartf2822
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MCV4U CCT – Math Assignment Submission</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-\f0\fs24 \cf0 <!DOCTYPE html>\
-<html lang="zh-CN">\
-<head>\
-  <meta charset="UTF-8" />\
-  <title>\uc0\u25968 \u23398 \u20316 \u19994 \u25552 \u20132 \u31995 \u32479 </title>\
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />\
-  <style>\
-    body \{\
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;\
-      background: #f5f7fa;\
-      margin: 0;\
-      padding: 0;\
-    \}\
-    header \{\
-      background: #2563eb;\
-      color: white;\
-      padding: 1.2rem;\
-      text-align: center;\
-    \}\
-    main \{\
-      max-width: 700px;\
-      margin: 2rem auto;\
-      background: white;\
-      padding: 2rem;\
-      border-radius: 12px;\
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);\
-    \}\
-    h2 \{\
-      margin-top: 0;\
-    \}\
-    label \{\
-      display: block;\
-      margin-top: 1rem;\
-      font-weight: 600;\
-    \}\
-    input, textarea, button \{\
-      width: 100%;\
-      margin-top: 0.5rem;\
-      padding: 0.6rem;\
-      font-size: 1rem;\
-    \}\
-    textarea \{\
-      resize: vertical;\
-      min-height: 120px;\
-    \}\
-    button \{\
-      margin-top: 1.5rem;\
-      background: #2563eb;\
-      color: white;\
-      border: none;\
-      border-radius: 8px;\
-      cursor: pointer;\
-    \}\
-    button:hover \{\
-      background: #1e40af;\
-    \}\
-    .success \{\
-      margin-top: 1rem;\
-      color: #16a34a;\
-      font-weight: 600;\
-    \}\
-  </style>\
-</head>\
-<body>\
-  <header>\
-    <h1>\uc0\u55357 \u56528  \u25968 \u23398 \u20316 \u19994 \u25552 \u20132 \u32593 \u31449 </h1>\
-    <p>\uc0\u29992 \u20110 \u25552 \u20132 \u19982 \u23637 \u31034 \u20320 \u30340 \u25968 \u23398 \u20316 \u19994 </p>\
-  </header>\
-\
-  <main>\
-    <h2>\uc0\u25552 \u20132 \u20316 \u19994 </h2>\
-\
-    <label>\uc0\u22995 \u21517 </label>\
-    <input type="text" id="name" placeholder="\uc0\u35831 \u36755 \u20837 \u20320 \u30340 \u22995 \u21517 " />\
-\
-    <label>\uc0\u20316 \u19994 \u26631 \u39064 </label>\
-    <input type="text" id="title" placeholder="\uc0\u20363 \u22914 \u65306 \u20108 \u27425 \u20989 \u25968 \u20316 \u19994 " />\
-\
-    <label>\uc0\u20316 \u19994 \u20869 \u23481 \u65288 \u21487 \u30452 \u25509 \u31896 \u36148 \u35299 \u39064 \u27493 \u39588 \u65289 </label>\
-    <textarea id="content" placeholder="\uc0\u22312 \u36825 \u37324 \u36755 \u20837 \u20320 \u30340 \u25968 \u23398 \u20316 \u19994 \u20869 \u23481 "></textarea>\
-\
-    <label>\uc0\u19978 \u20256 \u20316 \u19994 \u25991 \u20214 \u65288 \u22270 \u29255  / PDF\u65289 </label>\
-    <input type="file" id="file" />\
-\
-    <button onclick="submitHomework()">\uc0\u25552 \u20132 \u20316 \u19994 </button>\
-\
-    <div id="msg" class="success"></div>\
-  </main>\
-\
-  <script>\
-    function submitHomework() \{\
-      const name = document.getElementById('name').value;\
-      const title = document.getElementById('title').value;\
-      const content = document.getElementById('content').value;\
-\
-      if (!name || !title) \{\
-        alert('\uc0\u35831 \u22635 \u20889 \u22995 \u21517 \u21644 \u20316 \u19994 \u26631 \u39064 ');\
-        return;\
-      \}\
-\
-      document.getElementById('msg').innerText =\
-        '\uc0\u20316 \u19994 \u24050 \u25104 \u21151 \u25552 \u20132 \u65288 \u26412 \u22320 \u28436 \u31034 \u29256 \u65292 \u19981 \u20250 \u30495 \u27491 \u19978 \u20256 \u21040 \u26381 \u21153 \u22120 \u65289 ';\
-\
-      console.log(\{ name, title, content \});\
-    \}\
-  </script>\
-</body>\
-</html>\
-}
+  <!-- MathJax for formulas -->
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+    }
+    header {
+      background: #1e40af;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    section {
+      margin-bottom: 2.5rem;
+    }
+    h2 {
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 0.5rem;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 1rem;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.6rem;
+      margin-top: 0.4rem;
+      font-size: 1rem;
+    }
+    textarea {
+      min-height: 140px;
+    }
+    button {
+      margin-top: 1.5rem;
+      padding: 0.7rem 1.5rem;
+      font-size: 1rem;
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #1e3a8a;
+    }
+    footer {
+      text-align: center;
+      color: #6b7280;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+    .note {
+      background: #eef2ff;
+      padding: 1rem;
+      border-left: 5px solid #6366f1;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>MCV4U – Calculus & Vectors</h1>
+  <p>CCT Assignment Submission Website</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>Student Information</h2>
+    <label>Student Name</label>
+    <input type="text" placeholder="Your full name" />
+
+    <label>OSSD Course</label>
+    <input type="text" value="MCV4U – Calculus and Vectors" />
+
+    <label>Teacher</label>
+    <input type="text" placeholder="Teacher's name" />
+  </section>
+
+  <section>
+    <h2>CCT Task Description</h2>
+    <p>
+      This Critical Thinking Task (CCT) demonstrates the application of calculus and vectors
+      concepts to a real-world or mathematical problem. Mathematical reasoning, clarity,
+      and correct notation are emphasized.
+    </p>
+  </section>
+
+  <section>
+    <h2>Mathematical Solution</h2>
+    <label>Problem Statement</label>
+    <textarea placeholder="Describe the problem you are solving"></textarea>
+
+    <label>Solution & Explanation</label>
+    <textarea placeholder="Explain your steps, reasoning, and conclusions"></textarea>
+
+    <div class="note">
+      <strong>Math Notation Example:</strong><br />
+      You can write formulas like:<br />
+      \( \vec{v} = \langle 3, -2 \rangle \), \( \frac{dy}{dx} = 2x \), or \( \int_0^2 x^2 dx \)
+    </div>
+  </section>
+
+  <section>
+    <h2>File Submission</h2>
+    <label>Upload Supporting Files (PDF / Images)</label>
+    <input type="file" />
+  </section>
+
+  <section>
+    <h2>Declaration</h2>
+    <p>
+      I confirm that this work is my own and follows the academic honesty policy of the OSSD program.
+    </p>
+    <input type="checkbox" /> I agree
+  </section>
+
+  <button>Submit Assignment</button>
+
+  <footer>
+    <p>MCV4U CCT – OSSD Mathematics | Student-created submission website</p>
+  </footer>
+
+</main>
+
+</body>
+</html>
